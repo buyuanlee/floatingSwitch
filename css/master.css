@@ -1,0 +1,43 @@
+.btn{
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    cursor: pointer;
+}
+.chatBox {
+    display: none;
+    width: 120px;
+    height: 60px;
+    background: #009688;
+    margin: 0 5px;
+    position: absolute;
+    top: 0;
+    left:110%;
+    border-radius: 5px;
+}
+.active{
+    display: block;
+}
+
+.chatBox > span {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.chatBox:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 10%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #009688;
+    border-bottom: 10px solid transparent;
+}
+#box{
+    position: relative;
+    display: inline-block;
+}
